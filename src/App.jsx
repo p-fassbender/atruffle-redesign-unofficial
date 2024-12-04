@@ -1,6 +1,7 @@
 import './App.css'
 
-import { createTheme, colors, ThemeProvider } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material';
+import { Navbar } from './components/Navbar';
 
 const theme = createTheme({
     palette: {
@@ -10,6 +11,22 @@ const theme = createTheme({
         secondary: {
             main: "#9900ff"
         }
+    },
+    typography: {
+        logo: {
+            fontFamily: 'JungleFever',
+            fontSize: '2.3rem',
+            letterSpacing: '.2rem',
+        }
+    },
+    components: {
+        MuiTypography: {
+            defaultProps: {
+                variantMapping: {
+                    logo: 'h1',
+                },
+            },
+        },
     }
 })
 
@@ -17,6 +34,7 @@ function App() {
     return (
         <>
             <ThemeProvider theme={theme}>
+                <Navbar />
             </ThemeProvider>
         </>
     )

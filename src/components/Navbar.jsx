@@ -21,11 +21,11 @@ export const Navbar = () => {
         setAnchorElNav(null);
     };
 
-    const handleOpenUserMenu = (event) => {
+    const handleOpenProductsMenu = (event) => {
         setAnchorElProducts(event.currentTarget);
     };
 
-    const handleCloseUserMenu = () => {
+    const handleCloseProductsMenu = () => {
         setAnchorElProducts(null);
     };
 
@@ -42,13 +42,14 @@ export const Navbar = () => {
                             display: 'flex',
                             color: 'inherit',
                             textDecoration: 'none',
+                            flexGrow: { xs: 1, md: 0 }
                         }}
                     >
                         TRUFFLES bakery
                     </Typography>
 
                     {/* xs display only*/}
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                    <Box sx={{ flexGrow: { xs: 0, md: 1 }, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
                             aria-label="navigation menu"
@@ -65,12 +66,12 @@ export const Navbar = () => {
                             anchorEl={anchorElNav}
                             anchorOrigin={{
                                 vertical: 'bottom',
-                                horizontal: 'left',
+                                horizontal: 'right',
                             }}
                             keepMounted
                             transformOrigin={{
                                 vertical: 'top',
-                                horizontal: 'left',
+                                horizontal: 'right',
                             }}
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
@@ -85,15 +86,40 @@ export const Navbar = () => {
                     </Box>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
-                            >
-                                {page}
-                            </Button>
-                        ))}
+                        <Button
+                            onClick={handleOpenProductsMenu}
+                            sx={{ my: 2, color: 'white' }}
+                            endIcon={<KeyboardArrowDownIcon />}
+                        >
+                            Products
+                        </Button>
+                        <Button sx={{ my: 2, color: 'white'}}>Pricing</Button>
+                        <Button sx={{ my: 2, color: 'white'}}>About</Button>
+                        <Button sx={{ my: 2, color: 'white'}}>Testimonials</Button>
+                        <Button sx={{ my: 2, color: 'white'}}>Contact</Button>
+
+                        <Menu
+                            sx={{ mt: '45px' }}
+                            id="products-menu-appbar"
+                            anchorEl={anchorElProducts}
+                            anchorOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                            }}
+                            open={Boolean(anchorElProducts)}
+                            onClose={handleCloseProductsMenu}
+                        >
+                            {products.map((product) => (
+                                <MenuItem key={product} onClick={handleCloseProductsMenu}>
+                                    <Typography sx={{ textAlign: 'center' }}>{product}</Typography>
+                                </MenuItem>
+                            ))}
+                        </Menu>
                     </Box>
 
                 </Toolbar>

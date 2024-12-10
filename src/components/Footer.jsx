@@ -48,6 +48,10 @@ export const Footer = () => {
                             <TableCell>Saturday</TableCell>
                             <TableCell align='right'>8:00AM - 12:00PM</TableCell>
                         </TableRow>
+                        <TableRow>
+                            <TableCell>Sunday</TableCell>
+                            <TableCell align='right'>Closed</TableCell>
+                        </TableRow>
                     </TableBody>
                 </Table>
             </TableContainer>

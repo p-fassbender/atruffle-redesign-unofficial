@@ -4,36 +4,34 @@ import { Stack, Typography, Button } from '@mui/material'
 
 export const Hero = () => {
     return (
-        <>
+        <Stack
+            direction={{ xs: 'column', md: 'row' }}
+            spacing={2}
+            p={2}
+            sx={{
+                alignItems: 'center',
+                justifyContent: { xs: 'center', md: 'normal' },
+                bgcolor: 'primary.light'
+            }}
+        >
+            <ImageCarousel />
             <Stack
-                direction={{ xs: 'column', md: 'row' }}
+                direction={'column'}
                 spacing={2}
-                p={2}
                 sx={{
-                    alignItems: 'center',
-                    justifyContent: { xs: 'center', md: 'normal' },
-                    bgcolor: 'primary.light'
+                    flexGrow: 1,
+                    alignItems: 'center'
                 }}
             >
-                <ImageCarousel />
-                <Stack
-                    direction={'column'}
-                    spacing={2}
-                    sx={{
-                        flexGrow: 1,
-                        alignItems: 'center'
-                    }}
+                <Typography variant='h2'>Welcome!</Typography>
+                <Button
+                    variant='contained'
+                    href='#'
+                    size='large'
                 >
-                    <Typography variant='h2'>Welcome!</Typography>
-                    <Button
-                        variant='contained'
-                        href='#'
-                        size='large'
-                    >
-                        Order Now!
-                    </Button>
-                </Stack>
+                    Order Now!
+                </Button>
             </Stack>
-        </>
+        </Stack>
     )
 }

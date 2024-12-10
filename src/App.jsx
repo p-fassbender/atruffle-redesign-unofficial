@@ -3,6 +3,7 @@ import './App.css'
 import { createTheme, ThemeProvider } from '@mui/material';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { Footer } from './components/Footer';
 
 const theme = createTheme({
     palette: {
@@ -16,7 +17,7 @@ const theme = createTheme({
     typography: {
         logo: {
             fontFamily: 'JungleFever',
-            fontSize: '2.3rem',
+            fontSize: '2.17rem',
             letterSpacing: '.2rem',
         }
     },
@@ -37,6 +38,7 @@ function App() {
             <ThemeProvider theme={theme}>
                 <Navbar />
                 <Hero />
+                <Footer />
             </ThemeProvider>
         </>
     )

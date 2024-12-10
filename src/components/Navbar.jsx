@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { AppBar, Toolbar, IconButton, Typography, Box, Button, Menu, MenuItem, Container } from '@mui/material'
 
-import CakeIcon from '@mui/icons-material/Cake';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
 

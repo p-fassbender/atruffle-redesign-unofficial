@@ -10,7 +10,8 @@ export const Footer = () => {
             p={2}
             sx={{
                 justifyContent: 'space-around',
-                alignItems: 'center'
+                alignItems: 'center',
+                bgcolor: 'primary.main'
             }}
         >
             <Stack

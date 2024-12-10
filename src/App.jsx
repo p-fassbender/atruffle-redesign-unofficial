@@ -4,11 +4,14 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Footer } from './components/Footer';
+import { Promotional } from './components/Promotional';
+import { Informational } from './components/Informational';
 
 const theme = createTheme({
     palette: {
         primary: {
-            main: "#d3245c"
+            main: "#d3245c",
+            lighter: '#e0668d'
         },
         secondary: {
             main: "#9900ff"
@@ -38,6 +41,8 @@ function App() {
             <ThemeProvider theme={theme}>
                 <Navbar />
                 <Hero />
+                <Promotional />
+                <Informational />
                 <Footer />
             </ThemeProvider>
         </>

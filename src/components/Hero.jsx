@@ -28,6 +28,7 @@ export const Hero = () => {
                     variant='contained'
                     href='#'
                     size='large'
+                    color='secondary'
                 >
                     Order Now!
                 </Button>

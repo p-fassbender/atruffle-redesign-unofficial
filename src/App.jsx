@@ -2,6 +2,7 @@ import './App.css'
 
 import { createTheme, ThemeProvider } from '@mui/material';
 import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
 
 const theme = createTheme({
     palette: {
@@ -35,6 +36,7 @@ function App() {
         <>
             <ThemeProvider theme={theme}>
                 <Navbar />
+                <Hero />
             </ThemeProvider>
         </>
     )

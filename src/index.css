@@ -20,12 +20,6 @@
         url('./fonts/JungleFeverNF.otf') format('opentype');
 }
 
-@font-face {
-    font-family: 'JungleFever';
-    src: local('JungleFever'), url('./fonts/JungleFever.ttf') format('truetype');
-}
-
-
 body {
     margin: 0;
     display: flex;

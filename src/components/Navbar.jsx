@@ -93,10 +93,10 @@ export const Navbar = () => {
                         >
                             Products
                         </Button>
-                        <Button sx={{ my: 2, color: 'white'}}>Pricing</Button>
-                        <Button sx={{ my: 2, color: 'white'}}>About</Button>
-                        <Button sx={{ my: 2, color: 'white'}}>Testimonials</Button>
-                        <Button sx={{ my: 2, color: 'white'}}>Contact</Button>
+                        <Button sx={{ my: 2, color: 'white' }}>Pricing</Button>
+                        <Button sx={{ my: 2, color: 'white' }}>About</Button>
+                        <Button sx={{ my: 2, color: 'white' }}>Testimonials</Button>
+                        <Button sx={{ my: 2, color: 'white' }}>Contact</Button>
 
                         <Menu
                             sx={{ mt: '45px' }}

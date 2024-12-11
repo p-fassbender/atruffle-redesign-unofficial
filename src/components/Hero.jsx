@@ -23,10 +23,15 @@ export const Hero = () => {
                     alignItems: 'center'
                 }}
             >
-                <Typography variant='h2'>Welcome!</Typography>
+                <Typography
+                    sx={{
+                        fontSize: '4rem'
+                    }}
+                >
+                    Welcome!
+                </Typography>
                 <Button
                     variant='contained'
-                    href='#'
                     size='large'
                     color='secondary'
                 >

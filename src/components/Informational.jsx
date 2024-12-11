@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stack, Typography, Box } from '@mui/material'
+import { Stack, Typography, Box, Button } from '@mui/material'
 
 export const Informational = () => {
     return (
@@ -31,8 +31,20 @@ export const Informational = () => {
                     alignItems: 'center'
                 }}
             >
-                <Typography variant='h4'>Welcome!</Typography>
-                <Typography variant='body1'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat laborum unde praesentium a tempore. Atque animi repellat veniam, perferendis repellendus adipisci. Alias eius aut quam impedit perspiciatis est repellendus molestiae!</Typography>
+                <Typography
+                    sx={{
+                        fontSize: '2rem'
+                    }}
+                >
+                    Every day we provide customers with the best-quality products and personal service.
+                </Typography>
+                <Button
+                    variant='contained'
+                    size='large'
+                    color='secondary'
+                >
+                    See what our customers say!
+                </Button>
             </Stack>
         </Stack>
     )

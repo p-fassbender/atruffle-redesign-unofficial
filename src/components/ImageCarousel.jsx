@@ -1,13 +1,13 @@
 import React from 'react'
 import Carousel from 'react-material-ui-carousel'
 
-import giftPackageCake from '../assets/cake-aqua-brown-gift-package.png'
-import babyBumCake from '../assets/cake-baby-bum.png'
-import ivoryRoseCake from '../assets/cake-cream-and-ivory-rose.png'
-import pearlsFlowerCake from '../assets/cake-pearls-and-flowers.png'
-import confirmationCake from '../assets/cake-purple-confirmation.png'
-import sweekSixteenCake from '../assets/cake-sweet-16.png'
-import rosetteCake from '../assets/cake-tiered-white-rosette.png'
+import giftPackageCake from '../assets/carousel/cake-aqua-brown-gift-package.png'
+import babyBumCake from '../assets/carousel/cake-baby-bum.png'
+import ivoryRoseCake from '../assets/carousel/cake-cream-and-ivory-rose.png'
+import pearlsFlowerCake from '../assets/carousel/cake-pearls-and-flowers.png'
+import confirmationCake from '../assets/carousel/cake-purple-confirmation.png'
+import sweekSixteenCake from '../assets/carousel/cake-sweet-16.png'
+import rosetteCake from '../assets/carousel/cake-tiered-white-rosette.png'
 import { Box } from '@mui/material'
 
 const carouselImages = [

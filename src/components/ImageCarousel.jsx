@@ -1,14 +1,14 @@
 import React from 'react'
 import Carousel from 'react-material-ui-carousel'
-
-import giftPackageCake from '../assets/carousel/cake-aqua-brown-gift-package.png'
-import babyBumCake from '../assets/carousel/cake-baby-bum.png'
-import ivoryRoseCake from '../assets/carousel/cake-cream-and-ivory-rose.png'
-import pearlsFlowerCake from '../assets/carousel/cake-pearls-and-flowers.png'
-import confirmationCake from '../assets/carousel/cake-purple-confirmation.png'
-import sweekSixteenCake from '../assets/carousel/cake-sweet-16.png'
-import rosetteCake from '../assets/carousel/cake-tiered-white-rosette.png'
 import { Box } from '@mui/material'
+
+import giftPackageCake from '../assets/carousel-images/cake-aqua-brown-gift-package.png'
+import babyBumCake from '../assets/carousel-images/cake-baby-bum.png'
+import ivoryRoseCake from '../assets/carousel-images/cake-cream-and-ivory-rose.png'
+import pearlsFlowerCake from '../assets/carousel-images/cake-pearls-and-flowers.png'
+import confirmationCake from '../assets/carousel-images/cake-purple-confirmation.png'
+import sweetSixteenCake from '../assets/carousel-images/cake-sweet-16.png'
+import rosetteCake from '../assets/carousel-images/cake-tiered-white-rosette.png'
 
 const carouselImages = [
     {
@@ -32,7 +32,7 @@ const carouselImages = [
         alt: 'white colored, two-tiered cake decorated with purple flowers'
     },
     {
-        src: sweekSixteenCake,
+        src: sweetSixteenCake,
         alt: 'white and pink colored, three uneven-tiered cake decorated with swirls'
     },
     {
@@ -63,6 +63,7 @@ export const ImageCarousel = () => {
                         key={image.src}
                         src={image.src}
                         alt={image.alt}
+                        loading='lazy'
                         sx={{
                             width: '100%',
                             maxWidth: '500px',

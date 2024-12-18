@@ -126,7 +126,7 @@ const additionalFlavors = [
 
 export const Truffles = () => {
     return (
-        <Stack spacing={2} p={2} sx={{ justifyContent: 'center', alignItems: 'center' }}>
+        <Stack spacing={2} p={2} sx={{ justifyContent: 'center', alignItems: 'center'}}>
             <Typography variant='h3'>
                 Our Truffles
             </Typography>
@@ -134,7 +134,7 @@ export const Truffles = () => {
                 Most truffles are made with dark chocolate. Milk chocolate and several white chocolate options are also available.
             </Typography>
 
-            <ImageList cols={2} sx={{ display: { xs: 'grid', sm: 'none', md: 'none' } }}>
+            <ImageList cols={2} sx={{ display: { xs: 'grid', sm: 'none', md: 'none' }, bgcolor: 'primary.light' }}>
                 <ImageListItem key="Subheader" cols={2}>
                     <ListSubheader component="div">Decorations on truffles may vary</ListSubheader>
                 </ImageListItem>

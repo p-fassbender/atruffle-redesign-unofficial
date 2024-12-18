@@ -8,6 +8,7 @@ import { Promotional } from './components/Promotional';
 import { Informational } from './components/Informational';
 import { Testimonials } from './components/Testimonials';
 import { Truffles } from './components/Truffles';
+import { CakesAndMore } from './components/CakesAndMore';
 
 const theme = createTheme({
     palette: {
@@ -48,6 +49,7 @@ function App() {
                 <Footer />
                 <Testimonials />
                 <Truffles />
+                <CakesAndMore />
             </ThemeProvider>
         </>
     )

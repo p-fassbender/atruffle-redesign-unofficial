@@ -16,7 +16,6 @@ export const Hero = () => {
         >
             <ImageCarousel />
             <Stack
-                direction={'column'}
                 spacing={2}
                 sx={{
                     flexGrow: 1,

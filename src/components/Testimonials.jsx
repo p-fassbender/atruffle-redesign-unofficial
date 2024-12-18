@@ -38,6 +38,7 @@ export const Testimonials = () => {
                 {
                     reviews.map((review) => (
                         <Paper
+                            key={review.message.substring(0,20)}
                             sx={{
                                 p: '16px',
                                 maxWidth: '500px',

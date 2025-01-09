@@ -23,7 +23,7 @@ const theme = createTheme({
     typography: {
         logo: {
             fontFamily: 'JungleFever',
-            fontSize: '2.17rem',
+            fontSize: '2rem',
             letterSpacing: '.2rem',
         }
     },

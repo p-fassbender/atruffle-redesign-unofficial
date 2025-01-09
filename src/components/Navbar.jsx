@@ -4,8 +4,8 @@ import { AppBar, Toolbar, IconButton, Typography, Box, Button, Menu, MenuItem, C
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const pages = ['Products', 'Pricing', 'About', 'Testimonials', 'Contact']
-const products = ['Truffles', 'Cakes', 'Cupcakes', 'Pies', 'Brownies', 'Coffeecake Bars', 'Cheescake Bars', 'Shortbread Bars', 'Cookies']
+const pages = ['Truffles', 'Cakes & More', 'About', 'Testimonials', 'Contact']
+// const products = ['Truffles', 'Cakes', 'Cupcakes', 'Pies', 'Brownies', 'Coffeecake Bars', 'Cheescake Bars', 'Shortbread Bars', 'Cookies']
 
 export const Navbar = () => {
 
@@ -84,43 +84,12 @@ export const Navbar = () => {
                         </Menu>
                     </Box>
 
+                    {/* md or larger display only */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        <Button
-                            onClick={handleOpenProductsMenu}
-                            sx={{ my: 2, color: 'white' }}
-                            endIcon={<KeyboardArrowDownIcon />}
-                        >
-                            Products
-                        </Button>
-                        <Button sx={{ my: 2, color: 'white' }}>Pricing</Button>
-                        <Button sx={{ my: 2, color: 'white' }}>About</Button>
-                        <Button sx={{ my: 2, color: 'white' }}>Testimonials</Button>
-                        <Button sx={{ my: 2, color: 'white' }}>Contact</Button>
-
-                        <Menu
-                            sx={{ mt: '45px' }}
-                            id="products-menu-appbar"
-                            anchorEl={anchorElProducts}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            open={Boolean(anchorElProducts)}
-                            onClose={handleCloseProductsMenu}
-                        >
-                            {products.map((product) => (
-                                <MenuItem key={product} onClick={handleCloseProductsMenu}>
-                                    <Typography sx={{ textAlign: 'center' }}>{product}</Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
+                        {pages.map((page) => (
+                            <Button key={page} sx={{ my: 2, color: 'white' }}>{page}</Button>
+                        ))}
                     </Box>
-
                 </Toolbar>
             </Container>
         </AppBar>

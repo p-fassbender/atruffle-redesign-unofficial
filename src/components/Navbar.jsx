@@ -1,9 +1,30 @@
 import React, { useState } from 'react'
 import { AppBar, Toolbar, IconButton, Typography, Box, Button, Menu, MenuItem, Container } from '@mui/material'
-
+import { Link } from 'react-router'
 import MenuIcon from '@mui/icons-material/Menu';
 
-const pages = ['Truffles', 'Cakes & More', 'About', 'Testimonials', 'Contact']
+const pages = [
+    {
+        title: 'Truffles',
+        url: 'truffles'
+    },
+    {
+        title: 'Cakes & More',
+        url: 'cakes-and-more'
+    },
+    {
+        title: 'About',
+        url: 'about'
+    },
+    {
+        title: 'Testimonials',
+        url: 'testimonials'
+    },
+    {
+        title: 'Contact',
+        url: 'contact'
+    }
+]
 
 export const Navbar = () => {
 
@@ -23,8 +44,8 @@ export const Navbar = () => {
                 <Toolbar disableGutters>
                     <Typography
                         variant='logo'
-                        component={'a'}
-                        href='#'
+                        component={Link}
+                        to={'/'}
                         sx={{
                             mr: 2,
                             display: 'flex',
@@ -66,8 +87,18 @@ export const Navbar = () => {
                             sx={{ display: { xs: 'block', md: 'none' } }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                                <MenuItem key={page.url} onClick={handleCloseNavMenu}>
+                                    <Typography
+                                        component={Link}
+                                        to={`/${page.url}`}
+                                        sx={{
+                                            textAlign: 'center',
+                                            textDecoration: 'none',
+                                            color: 'secondary.main'
+                                        }}
+                                    >
+                                        {page.title}
+                                    </Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -76,7 +107,8 @@ export const Navbar = () => {
                     {/* md or larger display only */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
-                            <Button key={page} sx={{ my: 2, color: 'white' }}>{page}</Button>
+                            <Button component={Link}
+                                to={`/${page.url}`} key={page.url} sx={{ my: 2, color: 'white' }}>{page.title}</Button>
                         ))}
                     </Box>
                 </Toolbar>

@@ -31,7 +31,6 @@ export const Testimonials = () => {
                 spacing={2}
                 p={2}
                 sx={{
-                    justifyContent: 'center',
                     alignItems: 'center',
                     minHeight: '100vh',
                     bgcolor: 'primary.light'

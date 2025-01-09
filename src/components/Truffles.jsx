@@ -126,7 +126,15 @@ const additionalFlavors = [
 
 export const Truffles = () => {
     return (
-        <Stack spacing={2} p={2} sx={{ justifyContent: 'center', alignItems: 'center'}}>
+        <Stack
+            spacing={2}
+            p={2}
+            sx={{
+                alignItems: 'center',
+                minHeight: '100vh',
+                bgcolor: 'primary.light'
+            }}
+        >
             <Typography variant='h3'>
                 Our Truffles
             </Typography>
@@ -174,10 +182,10 @@ export const Truffles = () => {
                 }
             </ImageList>
 
-            <Typography variant='body1'>
+            <Typography variant='h4'>
                 Additional flavors not pictured:
             </Typography>
-            <List component={Stack} direction={'row'} sx={{ flexWrap: 'wrap', justifyContent: 'center' }}>
+            <List component={Stack} direction={'row'} sx={{ flexWrap: 'wrap', justifyContent: 'center', maxWidth: '80%' }}>
                 {
                     additionalFlavors.map((flavor) => (
                         <ListItem key={flavor} sx={{ width: 'auto' }}>

@@ -1,5 +1,4 @@
-import './App.css'
-
+import { Route, Routes } from 'react-router'
 import { createTheme, ThemeProvider } from '@mui/material';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -9,12 +8,15 @@ import { Informational } from './components/Informational';
 import { Testimonials } from './components/Testimonials';
 import { Truffles } from './components/Truffles';
 import { CakesAndMore } from './components/CakesAndMore';
+import { HomePage } from './components/HomePage';
+import './App.css'
 
 const theme = createTheme({
     palette: {
         primary: {
             main: "#d3245c",
-            lighter: '#e0668d'
+            lighter: '#e0668d',
+            faint: '#eda7be'
         },
         secondary: {
             main: "#9900ff"
@@ -43,13 +45,16 @@ function App() {
         <>
             <ThemeProvider theme={theme}>
                 <Navbar />
-                <Hero />
-                <Promotional />
-                <Informational />
+                <Routes>
+                    <Route path='/' element={<HomePage />} />
+                    <Route path='truffles' element={<Truffles />} />
+                    <Route path='cakes-and-more' element={<CakesAndMore />} />
+                    {/* <Route path='about' element={<About/>}/> */}
+                    <Route path='testimonials' element={<Testimonials />} />
+                    {/* <Route path='contact' element={<Contact/>}/> */}
+                    {/* <Route path='*' element={<FourOFour/>}/> */}
+                </Routes>
                 <Footer />
-                <Testimonials />
-                <Truffles />
-                <CakesAndMore />
             </ThemeProvider>
         </>
     )

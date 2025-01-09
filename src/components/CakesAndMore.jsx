@@ -4,7 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export const CakesAndMore = () => {
     return (
-        <Stack spacing={2} p={2} sx={{ bgcolor: 'primary.main', color: 'white' }}>
+        <Stack spacing={2} p={2} sx={{ bgcolor: 'primary.main', color: 'white', minHeight:"100vh" }}>
             <Typography variant='h3'>
                 Our Products
             </Typography>

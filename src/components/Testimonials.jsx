@@ -32,13 +32,18 @@ export const Testimonials = () => {
                 p={2}
                 sx={{
                     justifyContent: 'center',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    minHeight: '100vh',
+                    bgcolor: 'primary.light'
                 }}
             >
+                <Typography variant='h3'>Testimonials</Typography>
+                <Typography>Here's what our customers are saying...</Typography>
+
                 {
                     reviews.map((review) => (
                         <Paper
-                            key={review.message.substring(0,20)}
+                            key={review.message.substring(0, 20)}
                             sx={{
                                 p: '16px',
                                 maxWidth: '500px',

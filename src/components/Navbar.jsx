@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
 import { AppBar, Toolbar, IconButton, Typography, Box, Button, Menu, MenuItem, Container } from '@mui/material'
 
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const pages = ['Truffles', 'Cakes & More', 'About', 'Testimonials', 'Contact']
-// const products = ['Truffles', 'Cakes', 'Cupcakes', 'Pies', 'Brownies', 'Coffeecake Bars', 'Cheescake Bars', 'Shortbread Bars', 'Cookies']
 
 export const Navbar = () => {
 
     const [anchorElNav, setAnchorElNav] = useState(null);
-    const [anchorElProducts, setAnchorElProducts] = useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -18,14 +15,6 @@ export const Navbar = () => {
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
-    };
-
-    const handleOpenProductsMenu = (event) => {
-        setAnchorElProducts(event.currentTarget);
-    };
-
-    const handleCloseProductsMenu = () => {
-        setAnchorElProducts(null);
     };
 
     return (

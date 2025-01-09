@@ -1,15 +1,15 @@
 import { Route, Routes } from 'react-router'
 import { createTheme, ThemeProvider } from '@mui/material';
 import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
 import { Footer } from './components/Footer';
-import { Promotional } from './components/Promotional';
-import { Informational } from './components/Informational';
 import { Testimonials } from './components/Testimonials';
 import { Truffles } from './components/Truffles';
 import { CakesAndMore } from './components/CakesAndMore';
 import { HomePage } from './components/HomePage';
+import { About } from './components/About';
+
 import './App.css'
+import { Contact } from './components/Contact';
 
 const theme = createTheme({
     palette: {
@@ -49,9 +49,9 @@ function App() {
                     <Route path='/' element={<HomePage />} />
                     <Route path='truffles' element={<Truffles />} />
                     <Route path='cakes-and-more' element={<CakesAndMore />} />
-                    {/* <Route path='about' element={<About/>}/> */}
+                    <Route path='about' element={<About />} />
                     <Route path='testimonials' element={<Testimonials />} />
-                    {/* <Route path='contact' element={<Contact/>}/> */}
+                    <Route path='contact' element={<Contact/>}/>
                     {/* <Route path='*' element={<FourOFour/>}/> */}
                 </Routes>
                 <Footer />

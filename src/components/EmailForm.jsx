@@ -2,7 +2,6 @@ import { FormControl, InputLabel, Stack, TextField, Typography, Button, Paper, S
 import { MuiTelInput, matchIsValidTel } from 'mui-tel-input'
 import React, { useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
-import { EmailPreview } from './EmailPreview'
 /**
  * form built with react hook form
  * form for sending an email with emailjs

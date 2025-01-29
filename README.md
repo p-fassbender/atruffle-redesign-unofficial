@@ -16,7 +16,7 @@ The redesign focuses on improving the website's aesthetics, responsiveness, and 
 
 ## Project Links
 - **Original Website**: [https://atruffle.com/](https://atruffle.com)
-- **Live Version of Redesigned Site**: 
+- **Live Version of Redesigned Site**: [https://atruffle-redesign.netlify.app/](https://atruffle-redesign.netlify.app/)
 
 ## Technologies Used
 - Vite

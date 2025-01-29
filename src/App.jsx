@@ -10,6 +10,7 @@ import { About } from './components/About';
 
 import './App.css'
 import { Contact } from './components/Contact';
+import { FourOFour } from './components/FourOFour';
 
 const theme = createTheme({
     palette: {
@@ -52,7 +53,7 @@ function App() {
                     <Route path='about' element={<About />} />
                     <Route path='testimonials' element={<Testimonials />} />
                     <Route path='contact' element={<Contact/>}/>
-                    {/* <Route path='*' element={<FourOFour/>}/> */}
+                    <Route path='*' element={<FourOFour/>}/>
                 </Routes>
                 <Footer />
             </ThemeProvider>

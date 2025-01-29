@@ -107,8 +107,14 @@ export const Navbar = () => {
                     {/* md or larger display only */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
-                            <Button component={Link}
-                                to={`/${page.url}`} key={page.url} sx={{ my: 2, color: 'white' }}>{page.title}</Button>
+                            <Button
+                                component={Link}
+                                to={`/${page.url}`}
+                                key={page.url}
+                                sx={{ my: 2, color: 'white' }}
+                            >
+                                {page.title}
+                            </Button>
                         ))}
                     </Box>
                 </Toolbar>

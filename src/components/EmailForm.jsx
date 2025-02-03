@@ -128,7 +128,7 @@ export const EmailForm = () => {
                     label='Body'
                     variant='outlined'
                     multiline
-                    rows={10}
+                    rows={6}
                     {...register('body', {
                         required: 'A Message is required'
                     })}
@@ -147,7 +147,9 @@ export const EmailForm = () => {
                 <Paper
                     sx={{
                         padding: '16px',
-                        width: '500px',
+                        width: '100%',
+                        maxWidth: '500px',
+                        boxSizing: 'border-box',
                         position: 'absolute',
                         top: '50%',
                         left: '50%',

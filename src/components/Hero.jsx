@@ -1,6 +1,7 @@
 import React from 'react'
 import { ImageCarousel } from './ImageCarousel'
 import { Stack, Typography, Button } from '@mui/material'
+import { Link } from 'react-router'
 
 export const Hero = () => {
     return (
@@ -30,6 +31,9 @@ export const Hero = () => {
                     Welcome!
                 </Typography>
                 <Button
+                    component={Link}
+                    to={`/contact`}
+                    sx={{ my: 2, color: 'white' }}
                     variant='contained'
                     size='large'
                     color='secondary'

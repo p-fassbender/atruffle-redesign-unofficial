@@ -8,6 +8,7 @@ import sportyCupcakes from '../assets/promo-images/cupcakes-sporty.png'
 import dessertTray from '../assets/promo-images/dessert-tray.png'
 import freshFruitTart from '../assets/promo-images/tart-fresh-fruit.png'
 import cherryTruffle from '../assets/promo-images/truffle-cherry.png'
+import { Link } from 'react-router'
 
 const promoImages = [
     {
@@ -68,6 +69,9 @@ export const Promotional = () => {
                     We take an enormous pride in creating our products, and hope that you'll find something in our selection that you like.
                 </Typography>
                 <Button
+                    component={Link}
+                    to={`/cakes-and-more`}
+                    sx={{ my: 2, color: 'white' }}
                     variant='contained'
                     size='large'
                     color='secondary'

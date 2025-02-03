@@ -9,6 +9,7 @@ import rubiksCubeCake from '../assets/info-images/cake-rubiks-cube.png'
 import silverPinkCake from '../assets/info-images/cake-silver-pink.png'
 import snowmanCake from '../assets/info-images/cake-snowman.png'
 import trollsCake from '../assets/info-images/cake-trolls-and-creatures.png'
+import { Link } from 'react-router'
 
 const infoImages = [
     {
@@ -96,7 +97,11 @@ export const Informational = () => {
                 >
                     Every day we provide customers with the best-quality products and personal service.
                 </Typography>
+
                 <Button
+                    component={Link}
+                    to={`/testimonials`}
+                    sx={{ my: 2, color: 'white' }}
                     variant='contained'
                     size='large'
                     color='secondary'

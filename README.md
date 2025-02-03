@@ -80,7 +80,7 @@ Your project should now be running locally. Open your browser and go to `http://
 | ![original-pricing-and-more](https://github.com/user-attachments/assets/2d2e55b5-17db-464c-a05b-f064c44d5dc3) | ![redesign-cakes-and-more](https://github.com/user-attachments/assets/300fa77b-c979-4a43-8e1f-839f1419a8fc) |
 | ![original-about](https://github.com/user-attachments/assets/a552fae6-1ea8-4604-8a0c-295655e7404d) | ![redesign-about](https://github.com/user-attachments/assets/8ad26fe2-4188-44f8-9536-d7bdff75867d) |
 | ![original-testimonials](https://github.com/user-attachments/assets/141e283d-47ad-4d55-80f8-7a6eafcc16d5) | ![redesign-testimonials](https://github.com/user-attachments/assets/69768f9f-c5bd-4b5f-86b9-3904de73827c) |
-| ![original-contact](https://github.com/user-attachments/assets/052265c6-db37-46b4-8f63-089cb34ca643) | ![redesign-contact](https://github.com/user-attachments/assets/76a1ef34-d7dc-4c92-bf56-20a2c1587331) |
+| ![original-contact](https://github.com/user-attachments/assets/052265c6-db37-46b4-8f63-089cb34ca643) | ![redesign-contact](https://github.com/user-attachments/assets/f4df1a77-e6de-421c-8df2-82821ae53b33) |
 
 ## Acknowledgments
 This project is a personal redesign of the original website for Truffles. The goal was to reimagine the user experience and modernize the visual design based on the current structure and content of the existing site. While this redesign is entirely my own work, I want to acknowledge and give credit to the original website as the inspiration behind this project.

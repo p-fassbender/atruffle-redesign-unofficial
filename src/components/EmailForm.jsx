@@ -57,12 +57,11 @@ export const EmailForm = () => {
     const handleClose = () => setOpen(false);
 
     return (
-        <Paper sx={{ padding: '16px' }}>
+        <Paper sx={{ padding: '16px', width: '100%', maxWidth: '500px', boxSizing: 'border-box' }}>
             <Stack
                 component={'form'}
                 onSubmit={handleSubmit(onSubmit)}
                 spacing={2}
-                width={500}
             >
                 <FormControl>
                     <InputLabel htmlFor="subject">Subject</InputLabel>
